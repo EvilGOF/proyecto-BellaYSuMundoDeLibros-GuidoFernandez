@@ -1,0 +1,371 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.contenedor {
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+}
+body {
+  background: rgb(129, 74, 129);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 a {
+  color: rgb(38, 0, 48);
+  text-decoration: none;
+}
+main {
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+section {
+  color: rgb(43, 2, 43);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  width: 95%;
+  max-width: 1320px;
+  margin: 0 auto;
+  margin: 0 2.5rem 0 2.5rem;
+  flex: 1 1 500px;
+}
+
+/*NAV BAR*/
+
+.nav__bar {
+  background-color: rgb(129, 74, 160);
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  top: 0px;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow-wrap: normal;
+  z-index: 1;
+  height: auto;
+}
+.nav__logo {
+  flex: 1 1 300px;
+}
+.nav__list {
+  list-style-type: none;
+  display: flex;
+  box-sizing: content-box;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 300px;
+}
+.nav__item {
+  margin: 0 0 0 1rem;
+  text-align: center;
+  padding: 0 25px 0 25px;
+  border: 4px solid rebeccapurple;
+  border-radius: 15px 50px 30px;
+  flex: 1 1 200px;
+}
+.nav__item:hover,
+.nav__item:focus {
+  background-color: rgb(74, 34, 97);
+  transition: ease-in-out 0.5s;
+}
+.nav__link {
+  color: rgb(38, 0, 48);
+  text-decoration: none;
+  display: block;
+  width: 95px;
+  transition: ease-in-out 0.7s;
+}
+.nav__link:hover,
+.nav__link:focus {
+  color: rgb(161, 72, 245);
+}
+
+/*NAV BAR*/
+
+/*INDEX*/
+
+.main__index {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+}
+
+.main__index__hero {
+  animation-duration: 2s;
+  animation-name: showself;
+}
+@keyframes showself {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#main__index__img {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  left: 25px;
+  animation-duration: 2s;
+  animation-name: showself;
+}
+#main__index__img:hover,
+#main__index__img:focus {
+  transform: scale(1.01, 1.01);
+}
+
+/*INDEX*/
+/*FOOTER*/
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  right: 1.2rem;
+  height: auto;
+}
+.copyright__footer {
+  position: relative;
+  top: 200px;
+  margin-left: 2rem;
+}
+.icono__link,
+.icono__imagen {
+  position: relative;
+  top: 50px;
+  right: 200px;
+}
+/*FOOTER*/
+/*CATALOGO*/
+.catalogo__grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+}
+.catalogo__producto {
+  text-align: center;
+  background-color: rgb(161, 97, 152);
+  border: 2px solid rgba(136, 1, 136, 0.473);
+  border-radius: 25%;
+}
+.product__img {
+  position: relative;
+  top: 10px;
+  max-width: 260px;
+  max-height: 260px;
+}
+/*CATALOGO*/
+/*CONTACTO*/
+
+.contact__form__container {
+  position: relative;
+  text-align: center;
+}
+.contact__title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.contact__form {
+  background: linear-gradient(to bottom, rgb(161, 97, 152), rgb(252, 161, 240));
+  box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+  border-radius: 5px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 5px solid #300521;
+}
+
+.name {
+  background-color: #ebebeb;
+  color: black;
+  border-radius: 10px;
+  height: 20px;
+  width: 300px;
+  margin: 1.5rem 0 1.5rem 0;
+  transition: ease 0.5s;
+}
+.name:hover,
+.name:focus {
+  border-bottom: 5px solid #300521;
+  height: 30px;
+  width: 380px;
+  font-size: 2.09rem;
+}
+.email {
+  background-color: #ebebeb;
+  color: black;
+  border-radius: 10px;
+  height: 20px;
+  width: 300px;
+  margin: 1.5rem 0 1.5rem 0;
+  transition: ease 0.5s;
+}
+.email:hover,
+.email:focus {
+  border-bottom: 5px solid #300521;
+  height: 30px;
+  width: 380px;
+  font-size: 2.09rem;
+}
+.mensaje {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 17rem;
+  margin: 2rem 0 2rem 0;
+  transition: ease-in-out 2s;
+}
+
+.mensaje:hover,
+.mensaje:focus {
+  border-bottom: 5px solid #300521;
+  height: 20rem;
+  width: 380px;
+}
+.form__boton {
+  width: 200px;
+  color: white;
+  background-color: #300521;
+  font-size: 20px;
+  margin: 1.5rem 0 1.5rem 0;
+  transition: ease 0.5s;
+}
+.form__boton:hover,
+.form__boton:focus {
+  font-size: 30px;
+}
+.terms__checkbox {
+  margin: 2rem 0 2rem 0;
+}
+
+.evaluation {
+  border-radius: 10px;
+}
+.evaluation:hover,
+.evaluation:focus {
+  transform: scale(1.1, 1.1);
+}
+/*CONTACTO*/
+/*NOVEDADES*/
+.novedades__grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: auto;
+}
+/*NOVEDADES*/
+/*MEDIA QUERIE MOVILES*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    font-size: 1.5rem;
+    height: 100%;
+    max-height: 760px;
+    overflow-y: scroll; 
+  }
+  .nav__bar {
+    height: 30%;
+    max-height: 300px;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .nav__logo {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    bottom: 1rem;
+  }
+  .nav__list {
+    width: 100%;
+    height: 60%;
+    font-size: 1rem;
+    flex-direction: column;
+    position: relative;
+    bottom: 2rem;
+  }
+  .nav__link {
+    height: 15px;
+  }
+  .main__index {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 15rem 0 0 0;
+    position: relative;
+    top: 10rem;
+  }
+  .container {
+    width: 90%;
+    max-width: 480px;
+    height: auto;
+    max-height: 300px;
+    margin: 5rem auto 0 auto;
+  }
+  #main__index__img {
+    width: 85%;
+    height: auto;
+    position: absolute;
+  }
+  .main__index__hero {
+    position: relative;
+    top: 5rem;
+  }
+  .catalogo__grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rem;
+  }
+
+  .icono__link,
+  .icono__imagen { 
+   position: absolute;
+   width: 150px;
+   height: auto;
+   left: 1rem;
+   bottom: 2rem;
+  }
+  .copyright__footer {
+    position: absolute;
+    top: 40rem;
+    left: 1rem;
+  }
+  .contact__form__container {
+    margin-top: 31rem;
+  }

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link
+      rel="stylesheet"
+      href="https://raw.github.com/daneden/animate.css/master/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../img/book icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav__bar">
+        <h1 class="animate__animated animate__pulse nav__logo">
+          <a href="../index.html">Bella y su Mundo de Libros</a>
+        </h1>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catálogo.html">Catálogo</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="novedades.html">Novedades</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="carrito.html">Carrito</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contact__form__container">
+        <p class="contact__title">
+          Si desea enviar una consulta, critica o simplemente contactarnos,
+          llene el siguiente formulario.
+        </p>
+        <form class="contact__form">
+          <fieldset>
+            <input
+              class="name"
+              type="text"
+              name="Nombre"
+              id="Nombre"
+              required
+              placeholder="Juan Perez"
+            />
+            <br />
+            <input
+              class="email"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="juanperez@ejemplo.com"
+            />
+            <br />
+            <div>
+              <label for="expe">Evalua tu experiencia</label>
+              <select class="evaluation" name="expe" id="expe">
+                <option value="Pèsima">Pèsima</option>
+                <option value="Regular">Regular</option>
+                <option value="Buena">Buena</option>
+                <option value="Excelente">Excelente</option>
+              </select>
+            </div>
+            <br />
+            <label for="mensaje">Escribe tú mensaje</label>
+            <br />
+            <textarea
+              class="mensaje"
+              name="mensaje"
+              id="mensaje"
+              cols="30"
+              rows="15"
+              placeholder="..."
+            ></textarea>
+            <br />
+            <label for="prom">¿Te gustaría recibir promos y novedades?</label>
+            <input
+              type="checkbox"
+              name="prom"
+              id="prom"
+              value="Acepta"
+              class="terms__checkbox"
+            />
+            <br />
+            <input class="form__boton" type="submit" value="Enviar" />
+            <input class="form__boton" type="reset" value="Limpiar" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <br />
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+  <footer class="footer">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      width="2000px"
+      preserveAspectRatio="none"
+    >
+      <path
+        fill="#5000ca"
+        fill-opacity="1"
+        d="M0,32L48,32C96,32,192,32,288,80C384,128,480,224,576,272C672,320,768,320,864,272C960,224,1056,128,1152,96C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
+    <span class="copyright__footer"
+      >Copyright 2022 Bella y su Mundo de Libros</span
+    >
+    <a
+      class="icono__link"
+      target="_blank"
+      href="https://www.instagram.com/bellaysumundodelibros/?hl=es"
+    >
+      <img class="icono__imagen" src="../img/instagram.png" alt="Instagram"
+    /></a>
+  </footer>
+</html>
