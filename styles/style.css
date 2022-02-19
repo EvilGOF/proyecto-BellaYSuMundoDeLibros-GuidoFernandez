@@ -27,6 +27,12 @@ h1 a {
   color: rgb(38, 0, 48);
   text-decoration: none;
 }
+h2 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 1.9rem;
+}
 main {
   margin-top: 10rem;
   margin-left: auto;
@@ -71,6 +77,10 @@ svg {
 }
 .nav__logo {
   flex: 1 1 300px;
+}
+.nav__logo a:hover,
+.nav__logo a:focus {
+  color: #46042f;
 }
 .nav__list {
   list-style-type: none;
@@ -156,6 +166,7 @@ footer {
   position: relative;
   top: 200px;
   margin-left: 2rem;
+  color: #300521;
 }
 .icono__link,
 .icono__imagen {
@@ -183,6 +194,10 @@ footer {
   top: 10px;
   max-width: 260px;
   max-height: 260px;
+  border-radius: 7%;
+}
+.catalogo__item {
+  margin-top: 2rem;
 }
 /*CATALOGO*/
 /*CONTACTO*/
@@ -306,17 +321,19 @@ footer {
   }
   .nav__logo {
     width: 100%;
-    height: 40%;
+    height: 50%;
     position: relative;
-    bottom: 1rem;
+    top: 3rem;
+    font-size: 2rem;
   }
   .nav__list {
     width: 100%;
-    height: 60%;
+    height: 50%;
     font-size: 1rem;
     flex-direction: column;
     position: relative;
-    bottom: 2rem;
+    right: 1rem;
+    transform: translateY(-2rem);
   }
   .nav__link {
     height: 15px;
@@ -352,7 +369,11 @@ footer {
     flex-direction: column;
     margin-top: 20rem;
   }
-
+  .product__img {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+  }
   .icono__link,
   .icono__imagen {
     position: absolute;
