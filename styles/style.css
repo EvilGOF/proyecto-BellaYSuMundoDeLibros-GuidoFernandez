@@ -295,7 +295,7 @@ footer {
     font-size: 1.5rem;
     height: 100%;
     max-height: 760px;
-    overflow-y: scroll; 
+    overflow-y: scroll;
   }
   .nav__bar {
     height: 30%;
@@ -354,12 +354,12 @@ footer {
   }
 
   .icono__link,
-  .icono__imagen { 
-   position: absolute;
-   width: 150px;
-   height: auto;
-   left: 1rem;
-   bottom: 2rem;
+  .icono__imagen {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    left: 1rem;
+    bottom: 2rem;
   }
   .copyright__footer {
     position: absolute;
@@ -369,3 +369,4 @@ footer {
   .contact__form__container {
     margin-top: 31rem;
   }
+}
