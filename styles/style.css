@@ -96,8 +96,11 @@ h1 a:focus {
 .nav__link {
   color: rgb(38, 0, 48);
   text-decoration: none;
+  text-align: center;
   display: block;
   width: 95px;
+  margin-left: auto;
+  margin-right: auto;
   transition: ease-in-out 0.7s;
   transform: translateY(-5px);
 }
@@ -119,6 +122,9 @@ h1 a:focus {
 .main__index__hero {
   animation-duration: 2s;
   animation-name: showself;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 @keyframes showself {
   0% {
@@ -129,9 +135,9 @@ h1 a:focus {
   }
 }
 #main__index__img {
+  display: block;
   margin-right: auto;
   margin-left: auto;
-  position: relative;
   animation-duration: 2s;
   animation-name: showself;
   width: 90%;
@@ -141,7 +147,15 @@ h1 a:focus {
 #main__index__img:focus {
   transform: scale(1.01, 1.01);
 }
-
+.carousel,
+.slide,
+.carousel-inner {
+  width: 100%;
+  max-width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+}
 /*INDEX*/
 /*FOOTER*/
 footer {
