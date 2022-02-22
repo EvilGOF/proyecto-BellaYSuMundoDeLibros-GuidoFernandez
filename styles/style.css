@@ -7,11 +7,13 @@
 html {
   font-size: 62.5%;
 }
+/*
 .contenedor {
   width: 100%;
   max-width: 1500px;
   height: auto;
 }
+*/
 body {
   background: rgb(129, 74, 129);
   font-family: "Montserrat", sans-serif;
@@ -27,17 +29,7 @@ h1 a {
   color: rgb(38, 0, 48);
   text-decoration: none;
 }
-h2 {
-  font-size: 3rem;
-}
-h4 {
-  font-size: 1.9rem;
-}
-main {
-  margin-top: 10rem;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 section {
   color: rgb(43, 2, 43);
   margin: 1rem;
@@ -63,10 +55,6 @@ svg {
 .nav__bar {
   background-color: rgb(129, 74, 160);
   border: 1px solid black;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  position: fixed;
   top: 0px;
   padding: 0.5rem 2rem;
   width: 100%;
@@ -78,15 +66,15 @@ svg {
 .nav__logo {
   flex: 1 1 300px;
 }
-.nav__logo a:hover,
-.nav__logo a:focus {
+h1 a:hover,
+h1 a:focus {
   color: #46042f;
 }
 .nav__list {
   list-style-type: none;
   display: flex;
+  justify-content: flex-end;
   box-sizing: content-box;
-  justify-content: space-between;
   align-items: center;
   flex: 1 1 300px;
 }
@@ -96,7 +84,9 @@ svg {
   padding: 0 25px 0 25px;
   border: 4px solid rebeccapurple;
   border-radius: 15px 50px 30px;
-  flex: 1 1 200px;
+  max-height: 4rem;
+  height: auto;
+  font-size: 2rem;
 }
 .nav__item:hover,
 .nav__item:focus {
@@ -109,9 +99,10 @@ svg {
   display: block;
   width: 95px;
   transition: ease-in-out 0.7s;
+  transform: translateY(-5px);
 }
-.nav__link:hover,
-.nav__link:focus {
+
+.navbar-collapse .nav__list .nav__item .nav__link:hover {
   color: rgb(161, 72, 245);
 }
 
@@ -120,12 +111,9 @@ svg {
 /*INDEX*/
 
 .main__index {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-left: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
 }
 
 .main__index__hero {
@@ -144,9 +132,10 @@ svg {
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  left: 25px;
   animation-duration: 2s;
   animation-name: showself;
+  width: 90%;
+  max-width: 500px;
 }
 #main__index__img:hover,
 #main__index__img:focus {
@@ -156,23 +145,8 @@ svg {
 /*INDEX*/
 /*FOOTER*/
 footer {
-  width: 100%;
   position: relative;
-  bottom: 0;
-  right: 1.2rem;
-  height: auto;
-}
-.copyright__footer {
-  position: relative;
-  top: 200px;
-  margin-left: 2rem;
-  color: #300521;
-}
-.icono__link,
-.icono__imagen {
-  position: relative;
-  top: 50px;
-  right: 200px;
+  top: 15rem;
 }
 /*FOOTER*/
 /*CATALOGO*/
@@ -305,6 +279,7 @@ footer {
 }
 /*NOVEDADES*/
 /*MEDIA QUERIE MOVILES*/
+/*
 @media screen and (min-width: 320px) and (max-width: 480px) {
   body {
     font-size: 1.5rem;
@@ -391,3 +366,4 @@ footer {
     margin-top: 31rem;
   }
 }
+*/
