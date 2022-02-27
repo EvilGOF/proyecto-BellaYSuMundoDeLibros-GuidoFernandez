@@ -1,0 +1,93 @@
+.contact__form__container {
+  position: relative;
+  text-align: center;
+  .contact__title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .contact__form {
+    background: linear-gradient(
+      to bottom,
+      rgb(161, 97, 152),
+      rgb(252, 161, 240)
+    );
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 5px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 5px solid #300521;
+    .name {
+      background-color: #ebebeb;
+      color: black;
+      border-radius: 10px;
+      height: 20px;
+      width: 300px;
+      margin: 1.5rem 0 1.5rem 0;
+      transition: ease 0.5s;
+    }
+    .name:hover,
+    .name:focus {
+      border-bottom: 5px solid #300521;
+      height: 30px;
+      width: 380px;
+      font-size: 2.09rem;
+    }
+    .email {
+      background-color: #ebebeb;
+      color: black;
+      border-radius: 10px;
+      height: 20px;
+      width: 300px;
+      margin: 1.5rem 0 1.5rem 0;
+      transition: ease 0.5s;
+    }
+    .email:hover,
+    .email:focus {
+      border-bottom: 5px solid #300521;
+      height: 30px;
+      width: 380px;
+      font-size: 2.09rem;
+    }
+    .mensaje {
+      background-color: #ebebeb;
+      overflow: hidden;
+      height: 17rem;
+      margin: 2rem 0 2rem 0;
+      transition: ease-in-out 2s;
+    }
+
+    .mensaje:hover,
+    .mensaje:focus {
+      border-bottom: 5px solid #300521;
+      height: 20rem;
+      width: 380px;
+    }
+    .form__boton {
+      width: 200px;
+      color: white;
+      background-color: #300521;
+      font-size: 20px;
+      margin: 1.5rem 0 1.5rem 0;
+      transition: ease 0.5s;
+    }
+    .form__boton:hover,
+    .form__boton:focus {
+      font-size: 30px;
+    }
+    .terms__checkbox {
+      margin: 2rem 0 2rem 0;
+    }
+
+    .evaluation {
+      border-radius: 10px;
+    }
+    .evaluation:hover,
+    .evaluation:focus {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}

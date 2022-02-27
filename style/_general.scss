@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: rgb(129, 74, 129);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  overflow-x: hidden;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 a {
+      color: rgb(38, 0, 48);
+      text-decoration: none;
+    }
+  }
+  section {
+    color: rgb(43, 2, 43);
+    margin: 1rem;
+    padding: 1rem;
+  }
+  svg {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+  }
+}
