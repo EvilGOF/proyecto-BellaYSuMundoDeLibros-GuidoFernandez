@@ -1,9 +1,11 @@
 .catalogo__grid {
+  /*
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 2fr 2fr;
   grid-column-gap: 15px;
   grid-row-gap: 10px;
+  */
   .catalogo__producto {
     text-align: center;
     background-color: rgb(161, 97, 152);

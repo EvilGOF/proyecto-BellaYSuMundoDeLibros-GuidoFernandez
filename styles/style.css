@@ -198,14 +198,13 @@ body svg {
 }
 
 .catalogo__grid {
-  display: -ms-grid;
+  /*
   display: grid;
-  -ms-grid-columns: 2fr 2fr 2fr;
-      grid-template-columns: 2fr 2fr 2fr;
-  -ms-grid-rows: 2fr 2fr;
-      grid-template-rows: 2fr 2fr;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
   grid-column-gap: 15px;
   grid-row-gap: 10px;
+  */
 }
 
 .catalogo__grid .catalogo__producto {
