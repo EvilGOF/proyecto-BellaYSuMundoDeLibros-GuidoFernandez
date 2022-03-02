@@ -24,7 +24,7 @@
     animation-duration: 2s;
     animation-name: showself;
     width: 90%;
-    max-width: 500px;
+    max-width: ($ancho)-900px;
   }
   #main__index__img:hover,
   #main__index__img:focus {

@@ -110,6 +110,11 @@ body svg {
           transform: translateY(-5px);
 }
 
+.nav__bar .nav__list .nav__item #news {
+  position: relative;
+  right: 6px;
+}
+
 .nav__bar .nav__list .nav__item:hover,
 .nav__bar .nav__list .nav__item:focus {
   background-color: #4a2261;
@@ -207,14 +212,15 @@ body svg {
   */
 }
 
-.catalogo__grid .catalogo__producto {
+.catalogo__grid .libro-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
+  background: linear-gradient(to bottom, #a16198, #fca1f0);
+  border-radius: 14%;
   text-align: center;
-  background-color: #a16198;
   border: 2px solid rgba(136, 1, 136, 0.473);
-  border-radius: 25%;
 }
 
-.catalogo__grid .catalogo__producto .product__img {
+.catalogo__grid .product__img {
   position: relative;
   top: 10px;
   max-width: 260px;
@@ -222,7 +228,107 @@ body svg {
   border-radius: 7%;
 }
 
-.catalogo__grid .catalogo__producto .catalogo__item {
+.catalogo__grid .catalogo__item {
+  margin-top: 2rem;
+}
+
+.catalogo__grid .libro-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
+  background: linear-gradient(to bottom, #a16198, #fca1f0);
+  border-radius: 14%;
+  text-align: center;
+  border: 2px solid rgba(136, 1, 136, 0.473);
+}
+
+.catalogo__grid .product__img {
+  position: relative;
+  top: 10px;
+  max-width: 260px;
+  max-height: 260px;
+  border-radius: 7%;
+}
+
+.catalogo__grid .catalogo__item {
+  margin-top: 2rem;
+}
+
+.catalogo__grid .libro-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
+  background: linear-gradient(to bottom, #a16198, #fca1f0);
+  border-radius: 14%;
+  text-align: center;
+  border: 2px solid rgba(136, 1, 136, 0.473);
+}
+
+.catalogo__grid .product__img {
+  position: relative;
+  top: 10px;
+  max-width: 260px;
+  max-height: 260px;
+  border-radius: 7%;
+}
+
+.catalogo__grid .catalogo__item {
+  margin-top: 2rem;
+}
+
+.catalogo__grid .libro-4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
+  background: linear-gradient(to bottom, #a16198, #fca1f0);
+  border-radius: 14%;
+  text-align: center;
+  border: 2px solid rgba(136, 1, 136, 0.473);
+}
+
+.catalogo__grid .product__img {
+  position: relative;
+  top: 10px;
+  max-width: 260px;
+  max-height: 260px;
+  border-radius: 7%;
+}
+
+.catalogo__grid .catalogo__item {
+  margin-top: 2rem;
+}
+
+.catalogo__grid .libro-5 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
+  background: linear-gradient(to bottom, #a16198, #fca1f0);
+  border-radius: 14%;
+  text-align: center;
+  border: 2px solid rgba(136, 1, 136, 0.473);
+}
+
+.catalogo__grid .product__img {
+  position: relative;
+  top: 10px;
+  max-width: 260px;
+  max-height: 260px;
+  border-radius: 7%;
+}
+
+.catalogo__grid .catalogo__item {
+  margin-top: 2rem;
+}
+
+.catalogo__grid .libro-6 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
+  background: linear-gradient(to bottom, #a16198, #fca1f0);
+  border-radius: 14%;
+  text-align: center;
+  border: 2px solid rgba(136, 1, 136, 0.473);
+}
+
+.catalogo__grid .product__img {
+  position: relative;
+  top: 10px;
+  max-width: 260px;
+  max-height: 260px;
+  border-radius: 7%;
+}
+
+.catalogo__grid .catalogo__item {
   margin-top: 2rem;
 }
 
@@ -238,12 +344,12 @@ body svg {
 }
 
 .contact__form__container .contact__form {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
-  background: linear-gradient(to bottom, #a16198, #fca1f0);
+  background: -webkit-gradient(linear, left bottom, left top, from(#a16198), to(#fca1f0));
+  background: linear-gradient(to top, #a16198, #fca1f0);
   -webkit-box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
           box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
-  border-radius: 5px;
-  max-width: 480px;
+  border-radius: 7%;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 5px;
@@ -348,6 +454,26 @@ body svg {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+.card {
+  margin: auto;
+  max-width: 1000px;
+  width: 90%;
+  -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
+  border: transparent;
+}
+
+.card .cart {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
+  background: linear-gradient(to bottom, #a16198, #fca1f0);
+}
+
+.card .summary {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
+  background: linear-gradient(to bottom, #a16198, #fca1f0);
 }
 
 footer {

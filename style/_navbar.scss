@@ -40,6 +40,10 @@
         transition: ease-in-out 0.7s;
         transform: translateY(-5px);
       }
+      #news {
+        position: relative;
+        right: 6px;
+      }
     }
     .nav__item:hover,
     .nav__item:focus {

@@ -6,17 +6,19 @@
   grid-column-gap: 15px;
   grid-row-gap: 10px;
   */
-  .catalogo__producto {
-    text-align: center;
-    background-color: rgb(161, 97, 152);
-    border: 2px solid rgba(136, 1, 136, 0.473);
-    border-radius: 25%;
+  @for $i from 1 to 7 {
+    .libro-#{$i} {
+      background: $gradient;
+      border-radius: $radio + 7;
+      text-align: center;
+      border: 2px solid rgba(136, 1, 136, 0.473);
+    }
     .product__img {
       position: relative;
       top: 10px;
       max-width: 260px;
       max-height: 260px;
-      border-radius: 7%;
+      border-radius: $radio;
     }
     .catalogo__item {
       margin-top: 2rem;

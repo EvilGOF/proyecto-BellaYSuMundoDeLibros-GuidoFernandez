@@ -7,14 +7,14 @@
     text-align: center;
   }
   .contact__form {
-    background: linear-gradient(
-      to bottom,
-      rgb(161, 97, 152),
-      rgb(252, 161, 240)
-    );
+    @if max-width=($ancho)-900px {
+      background: $gradient-top;
+    } @else {
+      background: $gradient;
+    }
     box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
-    border-radius: 5px;
-    max-width: 480px;
+    border-radius: $radio;
+    max-width: ($ancho)-900px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 5px;
