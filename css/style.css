@@ -1,45 +1,41 @@
 * {
   padding: 0;
   border: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
   background: #814a81;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-  overflow-x: hidden;
+  height: fit-content;
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
 }
-
 body header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 body header h1 a {
   color: #260030;
   text-decoration: none;
 }
-
 body section {
   color: #2b022b;
   margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1rem;
 }
-
 body svg {
   position: absolute;
   left: 0;
@@ -55,36 +51,21 @@ body svg {
   z-index: 1;
   height: auto;
 }
-
 .nav__bar h1 a:hover,
 .nav__bar h1 a:focus {
   color: #46042f;
 }
-
 .nav__bar .nav__logo {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 300px;
-          flex: 1 1 300px;
+  flex: 1 1 300px;
 }
-
 .nav__bar .nav__list {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 300px;
-          flex: 1 1 300px;
+  justify-content: flex-end;
+  box-sizing: content-box;
+  align-items: center;
+  flex: 1 1 300px;
 }
-
 .nav__bar .nav__list .nav__item {
   margin: 0 0 0 1rem;
   text-align: center;
@@ -95,7 +76,6 @@ body svg {
   height: auto;
   font-size: 2rem;
 }
-
 .nav__bar .nav__list .nav__item .nav__link {
   color: #260030;
   text-decoration: none;
@@ -104,21 +84,16 @@ body svg {
   width: 95px;
   margin-left: auto;
   margin-right: auto;
-  -webkit-transition: ease-in-out 0.7s;
   transition: ease-in-out 0.7s;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
-
 .nav__bar .nav__list .nav__item #news {
   position: relative;
   right: 6px;
 }
-
 .nav__bar .nav__list .nav__item:hover,
 .nav__bar .nav__list .nav__item:focus {
   background-color: #4a2261;
-  -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
 }
 
@@ -131,26 +106,13 @@ body svg {
   margin-right: auto;
   margin-top: 5rem;
 }
-
 .main__index .main__index__hero {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: showself;
-          animation-name: showself;
+  animation-duration: 2s;
+  animation-name: showself;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
-
-@-webkit-keyframes showself {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes showself {
   0% {
     opacity: 0;
@@ -159,40 +121,32 @@ body svg {
     opacity: 1;
   }
 }
-
 .main__index #main__index__img {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: showself;
-          animation-name: showself;
+  animation-duration: 2s;
+  animation-name: showself;
   width: 90%;
   max-width: 500px;
 }
-
 .main__index #main__index__img:hover,
 .main__index #main__index__img:focus {
-  -webkit-transform: scale(1.01, 1.01);
-          transform: scale(1.01, 1.01);
+  transform: scale(1.01, 1.01);
 }
-
 .main__index .carousel,
 .main__index .slide,
 .main__index .carousel-inner {
   width: 95%;
   max-width: 800px;
-  margin-right: auto;
-  margin-left: auto;
   height: auto;
+  border-radius: 7%;
 }
-
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .main__index .carousel,
-  .main__index .slide,
-  .main__index .carousel-inner {
-    width: 100%;
+.main__index .slide,
+.main__index .carousel-inner {
+    width: 90%;
     max-width: 700px;
     margin-right: auto;
     margin-left: auto;
@@ -211,15 +165,12 @@ body svg {
   grid-row-gap: 10px;
   */
 }
-
 .catalogo__grid .libro-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
   background: linear-gradient(to bottom, #a16198, #fca1f0);
   border-radius: 14%;
   text-align: center;
   border: 2px solid rgba(136, 1, 136, 0.473);
 }
-
 .catalogo__grid .product__img {
   position: relative;
   top: 10px;
@@ -227,19 +178,15 @@ body svg {
   max-height: 260px;
   border-radius: 7%;
 }
-
 .catalogo__grid .catalogo__item {
   margin-top: 2rem;
 }
-
 .catalogo__grid .libro-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
   background: linear-gradient(to bottom, #a16198, #fca1f0);
   border-radius: 14%;
   text-align: center;
   border: 2px solid rgba(136, 1, 136, 0.473);
 }
-
 .catalogo__grid .product__img {
   position: relative;
   top: 10px;
@@ -247,19 +194,15 @@ body svg {
   max-height: 260px;
   border-radius: 7%;
 }
-
 .catalogo__grid .catalogo__item {
   margin-top: 2rem;
 }
-
 .catalogo__grid .libro-3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
   background: linear-gradient(to bottom, #a16198, #fca1f0);
   border-radius: 14%;
   text-align: center;
   border: 2px solid rgba(136, 1, 136, 0.473);
 }
-
 .catalogo__grid .product__img {
   position: relative;
   top: 10px;
@@ -267,19 +210,15 @@ body svg {
   max-height: 260px;
   border-radius: 7%;
 }
-
 .catalogo__grid .catalogo__item {
   margin-top: 2rem;
 }
-
 .catalogo__grid .libro-4 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
   background: linear-gradient(to bottom, #a16198, #fca1f0);
   border-radius: 14%;
   text-align: center;
   border: 2px solid rgba(136, 1, 136, 0.473);
 }
-
 .catalogo__grid .product__img {
   position: relative;
   top: 10px;
@@ -287,19 +226,15 @@ body svg {
   max-height: 260px;
   border-radius: 7%;
 }
-
 .catalogo__grid .catalogo__item {
   margin-top: 2rem;
 }
-
 .catalogo__grid .libro-5 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
   background: linear-gradient(to bottom, #a16198, #fca1f0);
   border-radius: 14%;
   text-align: center;
   border: 2px solid rgba(136, 1, 136, 0.473);
 }
-
 .catalogo__grid .product__img {
   position: relative;
   top: 10px;
@@ -307,19 +242,15 @@ body svg {
   max-height: 260px;
   border-radius: 7%;
 }
-
 .catalogo__grid .catalogo__item {
   margin-top: 2rem;
 }
-
 .catalogo__grid .libro-6 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
   background: linear-gradient(to bottom, #a16198, #fca1f0);
   border-radius: 14%;
   text-align: center;
   border: 2px solid rgba(136, 1, 136, 0.473);
 }
-
 .catalogo__grid .product__img {
   position: relative;
   top: 10px;
@@ -327,7 +258,6 @@ body svg {
   max-height: 260px;
   border-radius: 7%;
 }
-
 .catalogo__grid .catalogo__item {
   margin-top: 2rem;
 }
@@ -336,18 +266,14 @@ body svg {
   position: relative;
   text-align: center;
 }
-
 .contact__form__container .contact__title {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-
 .contact__form__container .contact__form {
-  background: -webkit-gradient(linear, left bottom, left top, from(#a16198), to(#fca1f0));
   background: linear-gradient(to top, #a16198, #fca1f0);
-  -webkit-box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
-          box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+  box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
   border-radius: 7%;
   max-width: 500px;
   margin-left: auto;
@@ -356,101 +282,79 @@ body svg {
   padding-bottom: 5px;
   border-top: 5px solid #300521;
 }
-
 .contact__form__container .contact__form .name {
   background-color: #ebebeb;
   color: black;
   border-radius: 10px;
   height: 20px;
-  width: 300px;
+  width: 90%;
   margin: 1.5rem 0 1.5rem 0;
-  -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
 }
-
 .contact__form__container .contact__form .name:hover,
 .contact__form__container .contact__form .name:focus {
   border-bottom: 5px solid #300521;
   height: 30px;
-  width: 380px;
   font-size: 2.09rem;
 }
-
 .contact__form__container .contact__form .email {
   background-color: #ebebeb;
   color: black;
   border-radius: 10px;
   height: 20px;
-  width: 300px;
+  width: 90%;
   margin: 1.5rem 0 1.5rem 0;
-  -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
 }
-
 .contact__form__container .contact__form .email:hover,
 .contact__form__container .contact__form .email:focus {
   border-bottom: 5px solid #300521;
   height: 30px;
-  width: 380px;
   font-size: 2.09rem;
 }
-
 .contact__form__container .contact__form .mensaje {
   background-color: #ebebeb;
   overflow: hidden;
   height: 17rem;
   margin: 2rem 0 2rem 0;
-  -webkit-transition: ease-in-out 2s;
   transition: ease-in-out 2s;
+  width: 90%;
+  border-radius: 7%;
 }
-
 .contact__form__container .contact__form .mensaje:hover,
 .contact__form__container .contact__form .mensaje:focus {
   border-bottom: 5px solid #300521;
   height: 20rem;
-  width: 380px;
 }
-
 .contact__form__container .contact__form .form__boton {
   width: 200px;
   color: white;
   background-color: #300521;
   font-size: 20px;
   margin: 1.5rem 0 1.5rem 0;
-  -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
 }
-
 .contact__form__container .contact__form .form__boton:hover,
 .contact__form__container .contact__form .form__boton:focus {
   font-size: 30px;
 }
-
 .contact__form__container .contact__form .terms__checkbox {
   margin: 2rem 0 2rem 0;
 }
-
 .contact__form__container .contact__form .evaluation {
   border-radius: 10px;
 }
-
 .contact__form__container .contact__form .evaluation:hover,
 .contact__form__container .contact__form .evaluation:focus {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
 .novedades__grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 2fr;
-      grid-template-columns: 2fr 2fr;
-  -ms-grid-rows: 2fr;
-      grid-template-rows: 2fr;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -460,19 +364,14 @@ body svg {
   margin: auto;
   max-width: 1000px;
   width: 90%;
-  -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 1rem;
   border: transparent;
 }
-
 .card .cart {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
   background: linear-gradient(to bottom, #a16198, #fca1f0);
 }
-
 .card .summary {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a16198), to(#fca1f0));
   background: linear-gradient(to bottom, #a16198, #fca1f0);
 }
 
@@ -480,4 +379,5 @@ footer {
   position: relative;
   top: 15rem;
 }
+
 /*# sourceMappingURL=style.css.map */

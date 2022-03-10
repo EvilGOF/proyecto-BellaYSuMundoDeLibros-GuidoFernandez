@@ -6,12 +6,17 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   background: rgb(129, 74, 129);
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-  overflow-x: hidden;
+  height: fit-content;
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
   header {
     display: flex;
     align-items: center;
@@ -24,6 +29,8 @@ body {
   section {
     color: rgb(43, 2, 43);
     margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1rem;
   }
   svg {
