@@ -138,9 +138,11 @@ body svg {
 .main__index .slide,
 .main__index .carousel-inner {
   width: 95%;
-  max-width: 800px;
+  max-width: 1000px;
   height: auto;
   border-radius: 7%;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media (max-width: 992px) {
   .main__index .carousel,

@@ -35,9 +35,11 @@
   .slide,
   .carousel-inner {
     width: 95%;
-    max-width: ($ancho)-600px;
+    max-width: ($ancho)-400px;
     height: auto;
     border-radius: $radio;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (max-width: 992px) {
