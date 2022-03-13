@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   border: 0;
@@ -14,11 +15,10 @@ body {
   background: #814a81;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-  height: fit-content;
   display: block;
   position: relative;
+  height: 100%;
   width: 100%;
-  max-width: 1400px;
 }
 body header {
   display: flex;
@@ -36,10 +36,13 @@ body section {
   margin-right: auto;
   padding: 1rem;
 }
-body svg {
+body .wave__background {
   position: absolute;
   left: 0;
   z-index: -1;
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
 }
 
 .nav__bar {
@@ -111,7 +114,7 @@ body svg {
   animation-name: showself;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 85%;
 }
 @keyframes showself {
   0% {
@@ -127,7 +130,7 @@ body svg {
   margin-left: auto;
   animation-duration: 2s;
   animation-name: showself;
-  width: 90%;
+  width: 100%;
   max-width: 500px;
 }
 .main__index #main__index__img:hover,
@@ -137,7 +140,7 @@ body svg {
 .main__index .carousel,
 .main__index .slide,
 .main__index .carousel-inner {
-  width: 95%;
+  width: 100%;
   max-width: 1000px;
   height: auto;
   border-radius: 7%;
@@ -159,13 +162,7 @@ body svg {
 }
 
 .catalogo__grid {
-  /*
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 2fr 2fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 10px;
-  */
+  margin-top: 4rem;
 }
 .catalogo__grid .libro-1 {
   background: linear-gradient(to bottom, #a16198, #fca1f0);
@@ -176,7 +173,9 @@ body svg {
 .catalogo__grid .product__img {
   position: relative;
   top: 10px;
+  width: 90%;
   max-width: 260px;
+  height: auto;
   max-height: 260px;
   border-radius: 7%;
 }
@@ -192,7 +191,9 @@ body svg {
 .catalogo__grid .product__img {
   position: relative;
   top: 10px;
+  width: 90%;
   max-width: 260px;
+  height: auto;
   max-height: 260px;
   border-radius: 7%;
 }
@@ -208,7 +209,9 @@ body svg {
 .catalogo__grid .product__img {
   position: relative;
   top: 10px;
+  width: 90%;
   max-width: 260px;
+  height: auto;
   max-height: 260px;
   border-radius: 7%;
 }
@@ -224,7 +227,9 @@ body svg {
 .catalogo__grid .product__img {
   position: relative;
   top: 10px;
+  width: 90%;
   max-width: 260px;
+  height: auto;
   max-height: 260px;
   border-radius: 7%;
 }
@@ -240,7 +245,9 @@ body svg {
 .catalogo__grid .product__img {
   position: relative;
   top: 10px;
+  width: 90%;
   max-width: 260px;
+  height: auto;
   max-height: 260px;
   border-radius: 7%;
 }
@@ -256,7 +263,9 @@ body svg {
 .catalogo__grid .product__img {
   position: relative;
   top: 10px;
+  width: 90%;
   max-width: 260px;
+  height: auto;
   max-height: 260px;
   border-radius: 7%;
 }
@@ -351,15 +360,20 @@ body svg {
   transform: scale(1.1, 1.1);
 }
 
-.novedades__grid {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 2fr;
-  justify-items: center;
-  align-items: center;
-  height: auto;
+.main_novedades {
   margin-left: auto;
   margin-right: auto;
+  width: 95%;
+  max-width: 1400px;
+}
+.main_novedades .reseñas_title {
+  text-align: center;
+  color: #2b022b;
+}
+.main_novedades .novedades_video {
+  width: 100%;
+  max-width: 560px;
+  height: 300px;
 }
 
 .card {
@@ -378,8 +392,21 @@ body svg {
 }
 
 footer {
+  width: 100%;
+  max-width: 1400px;
+  background: linear-gradient(to bottom, #814a81, #2e0929);
   position: relative;
   top: 15rem;
+  color: white;
+}
+footer .icono__link {
+  width: auto;
+  height: auto;
+}
+@media (max-width: 578px) {
+  footer {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

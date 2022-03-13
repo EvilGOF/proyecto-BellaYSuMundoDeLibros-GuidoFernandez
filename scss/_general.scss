@@ -12,11 +12,10 @@ body {
   background: rgb(129, 74, 129);
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-  height: fit-content;
   display: block;
   position: relative;
+  height: 100%;
   width: 100%;
-  max-width: 1400px;
   header {
     display: flex;
     align-items: center;
@@ -33,9 +32,12 @@ body {
     margin-right: auto;
     padding: 1rem;
   }
-  svg {
+  .wave__background {
     position: absolute;
     left: 0;
     z-index: -1;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
   }
 }

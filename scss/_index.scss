@@ -7,7 +7,7 @@
     animation-name: showself;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 85%;
   }
   @keyframes showself {
     0% {
@@ -23,7 +23,7 @@
     margin-left: auto;
     animation-duration: 2s;
     animation-name: showself;
-    width: 90%;
+    width: 100%;
     max-width: ($ancho)-900px;
   }
   #main__index__img:hover,
@@ -34,7 +34,7 @@
   .carousel,
   .slide,
   .carousel-inner {
-    width: 95%;
+    width: 100%;
     max-width: ($ancho)-400px;
     height: auto;
     border-radius: $radio;

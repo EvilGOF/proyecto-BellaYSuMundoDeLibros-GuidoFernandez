@@ -1,4 +1,15 @@
 footer {
+  width: 100%;
+  max-width: 1400px;
+  background: $gradient-footer;
   position: relative;
   top: 15rem;
+  color: white;
+  .icono__link {
+    width: auto;
+    height: auto;
+  }
+  @media (max-width: 578px) {
+    font-size: 1rem;
+  }
 }
