@@ -2,6 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem;
+  text-align: center;
   .main__index__hero {
     animation-duration: 2s;
     animation-name: showself;
@@ -41,18 +42,15 @@
     margin-right: auto;
     margin-left: auto;
   }
-
-  @media (max-width: 992px) {
-    .carousel,
-    .slide,
-    .carousel-inner {
-      width: 90%;
-      max-width: ($ancho)-700px;
-      margin-right: auto;
-      margin-left: auto;
-      height: 100%;
-      max-height: 700px;
-      background-size: cover;
-    }
+}
+@media (max-width: 992px) {
+  .carousel,
+  .slide,
+  .carousel-inner {
+    width: 90%;
+    max-width: ($ancho)-700px;
+    margin-right: auto;
+    margin-left: auto;
+    background-size: cover;
   }
 }

@@ -3,9 +3,32 @@
   margin-right: auto;
   width: 95%;
   max-width: 1400px;
-  .reseñas_title {
+  margin-top: 3rem;
+  .entradas_title {
     text-align: center;
     color: rgb(43, 2, 43);
+  }
+  .carousel,
+  .slide,
+  .carousel-inner {
+    width: 100%;
+    max-width: ($ancho)-400px;
+    height: 800px;
+    border-radius: $radio;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (max-width: 992px) {
+    .carousel,
+    .slide,
+    .carousel-inner {
+      width: 90%;
+      max-width: ($ancho)-700px;
+      height: 380px;
+      max-height: 700px;
+      background-size: cover;
+    }
   }
   .novedades_video {
     width: 100%;
