@@ -374,6 +374,7 @@ body .wave__background {
 .main_novedades .entradas_title {
   text-align: center;
   color: #2b022b;
+  margin-top: 2rem;
 }
 .main_novedades .carousel,
 .main_novedades .slide,
