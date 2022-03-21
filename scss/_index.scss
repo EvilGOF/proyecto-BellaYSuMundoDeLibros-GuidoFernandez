@@ -26,31 +26,10 @@
     animation-name: showself;
     width: 100%;
     max-width: ($ancho)-900px;
+    height: auto;
   }
   #main__index__img:hover,
   #main__index__img:focus {
     transform: scale(1.01, 1.01);
-  }
-
-  .carousel,
-  .slide,
-  .carousel-inner {
-    width: 100%;
-    max-width: ($ancho)-400px;
-    height: auto;
-    border-radius: $radio;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-@media (max-width: 992px) {
-  .carousel,
-  .slide,
-  .carousel-inner {
-    width: 90%;
-    max-width: ($ancho)-700px;
-    margin-right: auto;
-    margin-left: auto;
-    background-size: cover;
   }
 }

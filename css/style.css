@@ -132,33 +132,27 @@ body .wave__background {
   animation-name: showself;
   width: 100%;
   max-width: 500px;
+  height: auto;
+}
+@media (min-width: 578px) {
+  .main__index #main__index__img .mapouter {
+    width: 250px;
+    height: 250px;
+  }
+  .main__index #main__index__img .mapouter .gmap_canvas {
+    width: 250px;
+    height: 250px;
+  }
+  .main__index #main__index__img .mapouter .gmap_canvas iframe {
+    width: 250px;
+    height: 250px;
+  }
 }
 .main__index #main__index__img:hover,
 .main__index #main__index__img:focus {
   transform: scale(1.01, 1.01);
 }
-.main__index .carousel,
-.main__index .slide,
-.main__index .carousel-inner {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  border-radius: 7%;
-  margin-right: auto;
-  margin-left: auto;
-}
 
-@media (max-width: 992px) {
-  .carousel,
-.slide,
-.carousel-inner {
-    width: 90%;
-    max-width: 700px;
-    margin-right: auto;
-    margin-left: auto;
-    background-size: cover;
-  }
-}
 .catalogo__title {
   text-align: center;
   margin-left: auto;
