@@ -114,7 +114,21 @@ body .wave__background {
   animation-name: showself;
   margin-left: auto;
   margin-right: auto;
-  width: 85%;
+  width: 100%;
+}
+.main__index .main__index__hero .title {
+  font-size: 3rem;
+}
+.main__index .main__index__hero .subtitle {
+  font-size: 2rem;
+}
+@media (min-width: 1080px) {
+  .main__index .main__index__hero .title {
+    font-size: 4rem;
+  }
+  .main__index .main__index__hero .subtitle {
+    font-size: 3rem;
+  }
 }
 @keyframes showself {
   0% {
@@ -133,20 +147,6 @@ body .wave__background {
   width: 100%;
   max-width: 500px;
   height: auto;
-}
-@media (min-width: 578px) {
-  .main__index #main__index__img .mapouter {
-    width: 250px;
-    height: 250px;
-  }
-  .main__index #main__index__img .mapouter .gmap_canvas {
-    width: 250px;
-    height: 250px;
-  }
-  .main__index #main__index__img .mapouter .gmap_canvas iframe {
-    width: 250px;
-    height: 250px;
-  }
 }
 .main__index #main__index__img:hover,
 .main__index #main__index__img:focus {
@@ -410,6 +410,20 @@ body .wave__background {
 }
 .card .summary {
   background: linear-gradient(to bottom, #a16198, #fca1f0);
+}
+.card .summary .btn {
+  color: white;
+  font-size: 1.3rem;
+  width: 75px;
+  height: 50px;
+  background-color: rgba(207, 6, 207, 0.322);
+}
+@media (max-width: 768px) {
+  .card .summary {
+    background: linear-gradient(to top, #a16198, #fca1f0);
+    border-top: 1px solid #36142b;
+    padding-top: 1rem;
+  }
 }
 
 footer {
