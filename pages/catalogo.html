@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fas fa-arrow-up">Back To Top</i>
+  </button>
     <header>
       <nav class="nav__bar navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -156,6 +159,90 @@
               ><img src="../img/carrito-icon.png" alt="carrito-icon"
             /></a>
           </div>
+          <div class="catalogo__producto col-sm col-md-6 col-lg-4 libro-1">
+            <img
+              class="product__img"
+              src="../img/libro7.jpg"
+              alt="Un Reino de Carne y Fuego"
+            />
+            <div class="catalogo__item">
+              <h3>Un Reino de Carne y Fuego</h3>
+              <span>$2700</span>
+            </div>
+            <a href="carrito.html"
+              ><img src="../img/carrito-icon.png" alt="carrito-icon"
+            /></a>
+          </div>
+          <div class="catalogo__producto col-sm col-md-6 col-lg-4 libro-2">
+            <img
+              class="product__img"
+              src="../img/libro8.jpg"
+              alt="Cada Estrella de mi Cielo"
+            />
+            <div class="catalogo__item">
+              <h3>Cada Estrella de mi Cielo</h3>
+              <span>$2300</span>
+            </div>
+            <a href="carrito.html"
+              ><img src="../img/carrito-icon.png" alt="carrito-icon"
+            /></a>
+          </div>
+          <div class="catalogo__producto col-sm col-md-6 col-lg-4 libro-3">
+            <img
+              class="product__img"
+              src="../img/libro9.jpg"
+              alt="Boulevard"
+            />
+            <div class="catalogo__item">
+              <h3>Boulevard</h3>
+              <span>$2050</span>
+            </div>
+            <a href="carrito.html"
+              ><img src="../img/carrito-icon.png" alt="carrito-icon"
+            /></a>
+          </div>
+          <div class="catalogo__producto col-sm col-md-6 col-lg-4 libro-4">
+            <img
+              class="product__img"
+              src="../img/libro10.jpg"
+              alt="La segunda vida de Holly Chase"
+            />
+            <div class="catalogo__item">
+              <h3>La segunda vida de Holly Chase</h3>
+              <span>$1350</span>
+            </div>
+            <a href="carrito.html"
+              ><img src="../img/carrito-icon.png" alt="carrito-icon"
+            /></a>
+          </div>
+          <div class="catalogo__producto col-sm col-md-6 col-lg-4 libro-5">
+            <img
+              class="product__img"
+              src="../img/libro11.jpg"
+              alt="Ciudad de Medialuna + Organizador"
+            />
+            <div class="catalogo__item">
+              <h3>Ciudad de Medialuna + Organizador</h3>
+              <span>$4000</span>
+            </div>
+            <a href="carrito.html"
+              ><img src="../img/carrito-icon.png" alt="carrito-icon"
+            /></a>
+          </div>
+          <div class="catalogo__producto col-sm col-md-6 col-lg-4 libro-6">
+            <img
+              class="product__img"
+              src="../img/libro12.jpg"
+              alt="Antes de Diciembre + Organizador"
+            />
+            <div class="catalogo__item">
+              <h3>Antes de Diciembre + Organizador</h3>
+              <span>$2550</span>
+            </div>
+            <a href="carrito.html"
+              ><img src="../img/carrito-icon.png" alt="carrito-icon"
+            /></a>
+          </div>
         </div>
       </section>
     </main>
@@ -183,7 +270,7 @@
             <a
             class="icono__link"
             target="_blank"
-            href="#"
+            href="https://wa.me/5491144377619?text=Hola,%20coordinamos%20para%20retirar%20personalmente%20el%20pedido?"
           >
             <img class="icono__imagen" src="../img/whatsapp.png" alt="Whatsapp logo"
           /></a>
@@ -203,6 +290,32 @@
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
+    </script>
+    <script>
+    
+let mybutton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+scrollFunction();
+};
+
+function scrollFunction() {
+if (
+document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20
+) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
     </script>
   </body>
 </div>

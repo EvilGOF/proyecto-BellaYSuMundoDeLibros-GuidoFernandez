@@ -153,6 +153,20 @@ body .wave__background {
   transform: scale(1.01, 1.01);
 }
 
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 15px;
+  display: none;
+  background-color: rgba(207, 6, 207, 0.322);
+  border: none;
+}
+
+@media (max-width: 992px) {
+  #btn-back-to-top {
+    visibility: hidden;
+  }
+}
 .catalogo__title {
   text-align: center;
   margin-left: auto;
