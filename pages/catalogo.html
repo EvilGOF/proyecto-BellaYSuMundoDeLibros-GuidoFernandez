@@ -29,9 +29,6 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
-      <i class="fas fa-arrow-up">Back To Top</i>
-  </button>
     <header>
       <nav class="nav__bar navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -290,32 +287,6 @@
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
-    </script>
-    <script>
-    
-let mybutton = document.getElementById("btn-back-to-top");
-
-window.onscroll = function () {
-scrollFunction();
-};
-
-function scrollFunction() {
-if (
-document.body.scrollTop > 20 ||
-document.documentElement.scrollTop > 20
-) {
-mybutton.style.display = "block";
-} else {
-mybutton.style.display = "none";
-}
-}
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
-
-function backToTop() {
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
-}
     </script>
   </body>
 </div>
