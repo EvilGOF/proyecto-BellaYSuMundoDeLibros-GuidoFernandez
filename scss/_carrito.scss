@@ -1,3 +1,9 @@
+.title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: rgb(43, 2, 43);
+}
 .card {
   margin: auto;
   max-width: ($ancho)-400px;
@@ -16,6 +22,9 @@
       width: 75px;
       height: 50px;
       background-color: rgba(207, 6, 207, 0.322);
+    }
+    #code {
+      width: 100%;
     }
   }
   @media (max-width: 768px) {

@@ -153,20 +153,6 @@ body .wave__background {
   transform: scale(1.01, 1.01);
 }
 
-#btn-back-to-top {
-  position: fixed;
-  bottom: 20px;
-  left: 15px;
-  display: none;
-  background-color: rgba(207, 6, 207, 0.322);
-  border: none;
-}
-
-@media (max-width: 992px) {
-  #btn-back-to-top {
-    visibility: hidden;
-  }
-}
 .catalogo__title {
   text-align: center;
   margin-left: auto;
@@ -411,6 +397,13 @@ body .wave__background {
   height: 300px;
 }
 
+.title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #2b022b;
+}
+
 .card {
   margin: auto;
   max-width: 1000px;
@@ -431,6 +424,9 @@ body .wave__background {
   width: 75px;
   height: 50px;
   background-color: rgba(207, 6, 207, 0.322);
+}
+.card .summary #code {
+  width: 100%;
 }
 @media (max-width: 768px) {
   .card .summary {
